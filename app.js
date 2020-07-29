@@ -22,6 +22,8 @@ app.get("/message/:message/:phoneNumber", (req, res) => {
     });
 });
 
-app.listen(5050, () => {
+
+const port = process.env.PORT || 5050
+app.listen(port, () => {
   console.log("started on port 5050");
 });
